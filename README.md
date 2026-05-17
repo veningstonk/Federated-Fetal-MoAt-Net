@@ -137,12 +137,6 @@ _(Run experiments to populate remaining entries)_
 ## Citation
 
 ```bibtex
-@article{veningston2025fetalmoatnet_fl,
-  title={A Lightweight Federated Deep Learning Framework for Privacy-Preserving Fetal Ultrasound Analysis},
-  author={Veningston, K. and Mushtaq, Gazala},
-  journal={International Journal of Information Technology},
-  year={2025}
-}
 
 @article{mushtaq2025fetalmoatnet,
   title={Fetal MoAt Net: a light-weight deep learning model for fetal diagnostic plane classification},
