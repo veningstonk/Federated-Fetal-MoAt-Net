@@ -1,6 +1,6 @@
 # Fetal MoAt Net — Federated Learning Framework for Privacy-Preserving Fetal Ultrasound Analysis
 
-This repository implements a lightweight federated deep learning framework for multi-class fetal diagnostic plane classification from 2D B-mode ultrasound images, addressing the dual challenges of computational efficiency and patient data privacy in prenatal care settings. The proposed model, Fetal MoAt Net, integrates a MobileNetV2 backbone with a custom MoAt attention module, combining scaled dot-product spatial attention with a learnable residual scaling factor to enhance diagnostically relevant regions while suppressing ultrasound-specific speckle noise, all within 4.1M parameters and 1.2B FLOPs. The federated learning pipeline enables collaborative multi-institutional training without sharing raw patient data. Four aggregation strategies are benchmarked — FedAvg, FedProx, SCAFFOLD, and Contrastive Prototype FL across 5, 10, and 20 virtual clients under both IID and Non-IID (Dirichlet α = 0.5) data distributions on two public datasets: FPUS23 (4-class phantom) and FETAL_PLANES_DB (6-class real maternal-fetal). The repository is designed for direct reproducibility of the associated journal submission and as a reusable baseline toolkit for federated medical image classification research.
+This repository implements a lightweight federated deep learning framework for multi-class fetal diagnostic plane classification from 2D B-mode ultrasound images, addressing the dual challenges of computational efficiency and patient data privacy in prenatal care settings. The proposed model, Fetal MoAt Net, integrates a MobileNetV2 backbone with a custom MoAt attention module, combining scaled dot-product spatial attention with a learnable residual scaling factor to enhance diagnostically relevant regions while suppressing ultrasound-specific speckle noise, all within 4.1M parameters and 1.2B FLOPs. The federated learning pipeline enables collaborative multi-institutional training without sharing raw patient data. Four aggregation strategies are benchmarked — FedAvg, FedProx, SCAFFOLD, and Contrastive Prototype FL across 5, 10, and 20 virtual clients under both IID and Non-IID (Dirichlet α = 0.5) data distributions on two public datasets: FPUS23 (4-class phantom) and FETAL_PLANES_DB (6-class real maternal-fetal).
 
 
 ---
@@ -147,13 +147,3 @@ _(Run experiments to populate remaining entries)_
 }
 ```
 
----
-
-## References
-
-- Li T. et al., "Federated Optimization in Heterogeneous Networks (FedProx)," MLSys 2020.
-- Karimireddy S.P. et al., "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning," ICML 2020.
-- Fiorentino M.C. et al., "Contrastive prototype federated learning against noisy labels in fetal standard plane detection," Int J CARS, 2025.
-- Jiang Y. et al., "From pretraining to privacy: Federated ultrasound foundation model," npj Digital Medicine, 2025.
-- Sivasubramanian A. et al., "Efficient feature extraction using light-weight CNN attention," Phys Eng Sci Med, 2025.
-- Mushtaq G. and Veningston K., "Fetal MoAt Net," Int J Comput Appl, 2025.
